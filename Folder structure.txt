@@ -1,0 +1,65 @@
+RAILWAY_IVR/
+│
+├── app/
+│   ├── __init__.py
+│   │
+│   ├── api/
+│   │   ├── __init__.py
+│   │   │
+│   │   └── routes/
+│   │       ├── __init__.py
+│   │       │
+│   │       ├── voice/
+│   │       │   └── twilio_voice_routes.py         # Handles Twilio calls and routing
+│   │       │
+│   │       ├── pnr_status/
+│   │       │   └── pnr_status.py                  # Handles PNR queries (fetch from DB)
+│   │       │
+│   │       ├── complaints/
+│   │       │   └── complaints.py                  # Registers & retrieves complaints
+│   │       │
+│   │       ├── emergency/
+│   │       │   └── emergency.py                   # Handles emergency help requests
+│   │       │
+│   │       ├── train_schedule/
+│   │       │   └── train_schedule.py              # Fetches train schedule info
+│   │       │
+│   │       ├── seat_availability/
+│   │       │   └── seat_availability.py           # Checks available seats
+│   │       │
+│   │       └── refunds/
+│   │           └── refunds.py                     # Checks refund status
+│   │
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── config.py                              # Twilio credentials + app config
+│   │   └── logging_config.py                      # Optional logging setup
+│   │
+│   ├── db/
+│   │   ├── __init__.py
+│   │   ├── database.py                            # Initializes DB + tables
+│   │   ├── pnr_db.py                              # PNR table + functions
+│   │   ├── complaints_db.py                       # Complaints table + functions
+│   │   ├── emergency_db.py                        # Emergency table + functions
+│   │   ├── train_schedule_db.py                   # Train schedule table + functions
+│   │   ├── seat_db.py                             # Seat availability table + functions
+│   │   └── refunds_db.py                          # Refund table + functions
+│   │
+│   ├── models/
+│   │   ├── base.py
+│   │   └── interaction.py                         # Optional (for ORM or logging)
+│   │
+│   └── docs/
+│       ├── integration_testing.md
+│       ├── system_design.md
+│       └── Week-1 Report.pdf
+│
+├── venv/                                          # Your Python virtual environment
+│
+├── .env                                           # Twilio credentials + DB path
+├── .gitignore
+├── LICENSE
+├── main.py                                        # Main entry point (to be created)
+├── README.md
+├── requirements.txt
+└── run.sh
