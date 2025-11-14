@@ -1,11 +1,12 @@
 fastapi
 uvicorn[standard]
 gunicorn
+twilio
 python-dotenv
 requests
 pydantic
 sqlalchemy
-twilio
 jinja2
 aiofiles
 pyngrok
+python-multipart
