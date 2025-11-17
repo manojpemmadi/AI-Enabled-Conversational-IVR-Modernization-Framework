@@ -152,6 +152,7 @@ async def get_complaint_status(request: Request):
 
     response.hangup()
     return Response(content=str(response), media_type="application/xml")
+<<<<<<< HEAD
 
 # -------------------------------------------------------------------------
 # 4️⃣  Simple JSON API for unit testing (NOT part of Twilio flow)
@@ -173,3 +174,5 @@ async def register_complaint_api(payload: dict):
         "name": name,
         "issue": issue
     }
+=======
+>>>>>>> origin/main

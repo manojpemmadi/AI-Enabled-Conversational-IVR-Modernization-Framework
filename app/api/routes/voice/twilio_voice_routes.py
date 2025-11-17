@@ -121,6 +121,7 @@ async def make_call(to_number: str = Form(...)):
         from_=settings.TWILIO_PHONE_NUMBER,
     )
     return {"status": "Call initiated", "call_sid": call.sid}
+<<<<<<< HEAD
 
 from fastapi import APIRouter, Request
 from fastapi.responses import Response
@@ -142,3 +143,5 @@ async def ivr_root(request: Request):
         response.say("Invalid option.", voice="man")
 
     return Response(content=str(response), media_type="application/xml")
+=======
+>>>>>>> origin/main

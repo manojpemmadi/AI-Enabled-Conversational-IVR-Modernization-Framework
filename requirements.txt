@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fastapi
 uvicorn[standard]
 gunicorn
@@ -10,3 +11,17 @@ jinja2
 aiofiles
 pyngrok
 python-multipart
+=======
+fastapi
+uvicorn[standard]
+gunicorn
+twilio
+python-dotenv
+requests
+pydantic
+sqlalchemy
+jinja2
+aiofiles
+pyngrok
+python-multipart
+>>>>>>> origin/main

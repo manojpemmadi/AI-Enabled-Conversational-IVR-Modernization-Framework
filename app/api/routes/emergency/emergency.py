@@ -113,6 +113,7 @@ async def process_emergency(request: Request):
         response.hangup()
 
     return Response(content=str(response), media_type="application/xml")
+<<<<<<< HEAD
 
 @router.get("/help")
 async def emergency_help():
@@ -120,3 +121,5 @@ async def emergency_help():
     Simple health/help endpoint for unit test.
     """
     return {"message": "Emergency support available"}
+=======
+>>>>>>> origin/main
