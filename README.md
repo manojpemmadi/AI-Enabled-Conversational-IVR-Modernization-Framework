@@ -4,10 +4,7 @@
 
 ---
 
-## 🌐 Live Deployment  
-Your backend is deployed on Render and publicly accessible at:  
 
-🔗 **https://ai-enabled-conversational-ivr-69hh.onrender.com**
 
 ---
 
